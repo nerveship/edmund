@@ -9,7 +9,7 @@ intents.members = True
 intents.message_content = True
 
 bot = commands.Bot(command_prefix='-', intents=intents)
-test
+
 @bot.event
 async def on_ready():
     print(f'We have logged in as {bot.user}')
@@ -99,6 +99,11 @@ async def higurashi(ctx):
 @bot.command(brief="Ask Ed how he's feeling!", description='Usage: -feeling')
 async def feeling(ctx):
     await ctx.send(random.choice(moods))
+
+#GIT TEST
+@bot.command()
+async def test(ctx):
+    await ctx.send('Test complete!')
 
 #id thing
 with open(os.path.join(sys.path[0], "token.txt"), "r", encoding='utf8') as f:
