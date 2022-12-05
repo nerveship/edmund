@@ -100,7 +100,6 @@ async def higurashi(ctx):
 async def feeling(ctx):
     await ctx.send(random.choice(moods))
 
-
 #id thing
 with open(os.path.join(sys.path[0], "token.txt"), "r", encoding='utf8') as f:
     TOKEN = f.readline()
