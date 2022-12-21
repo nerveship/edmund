@@ -104,4 +104,7 @@ async def feeling(ctx):
 with open(os.path.join(sys.path[0], "token.txt"), "r", encoding='utf8') as f:
     TOKEN = f.readline()
 
+@bot.command(brief="Set your own custom colour!", description="Usage: -rbg ")
+async def rbg(self, ctx, color)
+
 bot.run(TOKEN)
